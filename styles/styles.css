@@ -34,9 +34,9 @@ aside {
     text-align: center;
 }
 aside h2 {
-    position: relative;
-    top: 40px;
-    left: 0px;
+    position: absolute;
+    top: 500px;
+    left: 80px;
 }
 aside img {
     width: 200px;
