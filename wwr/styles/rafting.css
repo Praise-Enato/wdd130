@@ -16,18 +16,37 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: var(--primary-color); 
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--font-color);
+    text-align: center;
 }
 
 .logo-box img {
     max-height: 50px;
 }
 
-nav a {
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
     color: var(--font-color);
     text-decoration: none;
     font-weight: 400;
@@ -36,7 +55,7 @@ nav a {
 .hero {
     position: relative;
     text-align: center;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .hero img {
@@ -64,7 +83,7 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(93, 42, 66, 0.5);
-    color:var(--font-color);
+    color: var(--font-color);
     padding: 20px;
     width: 80%;
     max-width: 600px;
@@ -83,26 +102,68 @@ nav a {
     margin: 0;
 }
 
-section {
+section.history {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 20px;
+}
+
+section.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+section.adventures img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; 
+}
+
+section.adventures figure {
+    margin: 0;
+}
+
+section.adventures figcaption {
+    text-align: center;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+section p {
+    background-color: var(--primary-color);
+}
+
+section.adventures h2 {
+    grid-column: 1/6;
 }
 
 section h2 {
     color: var(--primary-color);
     font-family: "Kanit", serif;
     font-weight: 200;
-    font-style: normal;
+    font-style: normal;  
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--font-color);
 }
 
 footer p {
     margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social-links a {
@@ -110,7 +171,7 @@ footer p {
     margin: 0 10px;
 }
 
-.social-links a img {
+.social-links img {
     max-height: 30px;
     text-decoration: none;
 }
