@@ -311,3 +311,204 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+.newsletter {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-color);
+}
+
+
+.call-to-action {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1 / 0.5; 
+}
+
+.grid-item h3 {
+    color: var(--font-color);
+    margin: 15px 0;
+}
+
+.grid-item p {
+    color: var(--font-color);
+    margin: 0;
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-descriptions h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio: 1 / 0.75;
+}
+
+.trip h3 {
+    color: var(--font-color);
+    margin: 15px 0;
+}
+
+.trip p {
+    color: var(--font-color);
+    margin: 10px 0;
+}
+
+.trip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trip ul li {
+    color: var(--font-color);
+    margin: 5px 0;
+}
+
+/* Trip Table */
+.trip-table {
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-table h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.trip-table tr:hover {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
